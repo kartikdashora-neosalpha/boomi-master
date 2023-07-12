@@ -1,0 +1,12 @@
+[{
+	"environmentName": "Test",
+	"processDetails": [{
+		"processName": "[main]_GS-Callback_After_Validation",
+		"componentID": "59e14a1c-9e94-40ae-a53e-59459349d2d0",
+		"packageVersion": "",
+		"packageNote": "SQS queue Logic ",
+		"packageId": "02cbbcfd-c0b9-4d6c-b066-63726d8acf21",
+		"mode": "re-deploy ",
+		"deploymentID": ""
+	}]
+}]
