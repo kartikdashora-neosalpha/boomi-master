@@ -1,0 +1,21 @@
+[{
+	"environmentName": "Test",
+	"processDetails": [{
+		"processName": "[ProcessRoute]Send Log to SQS V2",
+		"componentID": "07e4af95-0ae0-48f4-b333-a62ebcf4f48c",
+		"packageVersion": "",
+		"packageNote": "Remove SQS queue Logic V2",
+		"packageId": "02cbbcfd-c0b9-4d6c-b066-63726d8acf21",
+		"mode": "re-deploy ",
+		"deploymentID": ""
+	},
+  {
+		"processName": "[ProcessRoute]Send Log to SQS",
+		"componentID": "07e4af95-0ae0-48f4-b333-a62ebcf4f48c",
+		"packageVersion": "",
+		"packageNote": "Remove SQS queue Logic ",
+		"packageId": "02cbbcfd-c0b9-4d6c-b066-63726d8acf21",
+		"mode": "re-deploy ",
+		"deploymentID": ""
+	}]
+}]
