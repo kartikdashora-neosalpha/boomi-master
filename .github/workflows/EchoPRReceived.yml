@@ -2,8 +2,6 @@ on:
   pull_request:
     types:
       - opened
-    branches:
-      - 'boomi/**'
 jobs:
   approved:
     runs-on: ubuntu-latest    
