@@ -1,0 +1,32 @@
+{ 
+	"QueryFilter" : { 
+		"expression" : { 
+			"operator" : "and", 
+			"nestedExpression" : [ 
+			{ 
+				"argument" : [ 
+				"937087dd-62f4-4104-9a26-26b4b0c4cb56" 
+			], 
+				"operator" : "EQUALS", 
+				"property" : "apiKey" 
+			},
+            // { 
+			// 	"argument" : [ 
+			// 	"d366c18f-94a1-4fab-9055-66994ba24219" 
+			// ], 
+			// 	"operator" : "EQUALS", 
+			// 	"property" : "environmentId" 
+			// }
+            // ,
+            { 
+				"argument" : [ 
+				"2023-03-18T20:30:00Z",
+                "2023-07-18T19:00:00Z" 
+			], 
+				"operator" : "BETWEEN", 
+				"property" : "timeBlock" 
+			}
+			] 
+		} 
+	} 
+}
