@@ -1,0 +1,25 @@
+name: API Calls Workflow
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  api-calls:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+      - name: OAuth Call
+        id: api-call
+        run: |
+          request_body="client_id=8196869b-141b-48fa-a814-1d0f792e3dde&client_secret=heo8Q~t7hCmDeW7FJ86hGJZPLNVvDQ0Nc~5jhduy&grant_type=client_credentials"
+          response=$(curl -X POST \
+            -H "Accept: */*" \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            -d "$request_body" \
+            https://api.dev.convexin.info/dev/auth/v1/oauth/token)
+          access_token=$(echo "$response" | jq -r '.access_token')
+          echo "::set-output name=access_token::$access_token"
+          
+          
