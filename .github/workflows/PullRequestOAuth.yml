@@ -25,4 +25,7 @@ jobs:
           response_code=$?
           echo "::set-output name=response_code::$response_code"
           echo $response_code
+          http_code=$(echo "$response" | tr -d '\n')
+          echo "::set-output name=http_code::$response_code"
+          echo $http_code
           
