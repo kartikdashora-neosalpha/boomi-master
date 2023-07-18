@@ -21,5 +21,5 @@ jobs:
             https://api.dev.convexin.info/dev/auth/v1/oauth/token)
           access_token=$(echo "$response" | jq -r '.access_token')
           echo "::set-output name=access_token::$access_token"
-          
+          echo $access_token
           
